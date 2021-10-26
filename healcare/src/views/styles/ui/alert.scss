@@ -1,0 +1,20 @@
+/*Alert Styles*/
+.cbi-custom-sweet-alert {
+  & h2 {
+    color: $white-color;
+  }
+}
+
+.notification {
+  @include border-radius($border-radius-sm);
+
+  & .title {
+    font-size: ($font-size-lg + 2);
+    font-weight: $font-weight-medium;
+    color: $white-color;
+  }
+}
+
+.cbi-sweet-alert-top-space {
+  padding-top: $size-40 !important;
+}

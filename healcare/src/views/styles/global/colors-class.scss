@@ -1,0 +1,1530 @@
+@import "variables";
+// $import '~antd/lib/style/color/colors.less';
+
+/* color classes */
+
+// BG ColorPicker
+.cbi-bg-primary {
+  background-color: $primary-color !important;
+}
+
+a.cbi-bg-primary {
+  &:hover,
+  &:focus {
+    background-color: $primary-color !important;
+  }
+}
+
+.cbi-bg-primary-light {
+  background-color: $primary-4 !important;
+}
+
+.cbi-bg-secondary {
+  background-color: $secondary-color !important;
+}
+
+a.cbi-bg-secondary {
+  &:hover,
+  &:focus {
+    background-color: $secondary-color !important;
+  }
+}
+
+.cbi-bg-success {
+  background-color: $success-color !important;
+}
+
+a.cbi-bg-success {
+  &:hover,
+  &:focus {
+    background-color: darken($success-color, 10%) !important;
+  }
+}
+
+.cbi-bg-success-dark {
+  background-color: darken($success-color, 15%) !important;
+}
+
+a.cbi-bg-success-dark {
+  &:hover,
+  &:focus {
+    background-color: darken($success-color, 20%) !important;
+  }
+}
+
+.cbi-bg-info {
+  background-color: $info-color !important;
+}
+
+a.cbi-bg-info {
+  &:hover,
+  &:focus {
+    background-color: darken($info-color, 10%) !important;
+  }
+}
+
+.cbi-bg-warning {
+  background-color: $warning-color !important;
+}
+
+a.cbi-bg-warning {
+  &:hover,
+  &:focus {
+    background-color: darken($warning-color, 10%) !important;
+  }
+}
+
+.cbi-bg-danger {
+  background-color: $danger-color !important;
+}
+
+a.cbi-bg-danger {
+  &:hover,
+  &:focus {
+    background-color: darken($danger-color, 10%) !important;
+  }
+}
+
+.cbi-bg-light {
+  background-color: $grey-4 !important;
+}
+
+a.cbi-bg-light {
+  &:hover,
+  &:focus {
+    background-color: $grey-5 !important;
+  }
+}
+
+.cbi-bg-dark {
+  background-color: $black-color !important;
+}
+
+a.cbi-bg-dark {
+  &:hover,
+  &:focus {
+    background-color: lighten($black-color, 10%) !important;
+  }
+}
+
+.cbi-bg-white {
+  background-color: $white-color !important;
+}
+
+a.cbi-bg-white {
+  &:hover,
+  &:focus {
+    background-color: darken($white-color, 5%) !important;
+  }
+}
+
+.cbi-bg-grey {
+  background-color: darken($grey-5, 5%) !important;
+}
+
+a.cbi-bg-grey {
+  &:hover,
+  &:focus {
+    background-color: darken($grey-6, 5%) !important;
+  }
+}
+
+.cbi-bg-light-grey {
+  background-color: $grey-2 !important;
+}
+
+.cbi-bg-transparent {
+  background-color: transparent !important;
+}
+
+.cbi-bg-pink {
+  background-color: $pink-color !important;
+}
+
+a.cbi-bg-pink {
+  &:hover,
+  &:focus {
+    background-color: darken($pink-color, 10%) !important;
+  }
+}
+
+.cbi-bg-green {
+  background-color: $green-color !important;
+}
+
+a.cbi-bg-green {
+  &:hover,
+  &:focus {
+    background-color: darken($green-color, 10%) !important;
+  }
+}
+
+.cbi-bg-green-light {
+  background-color: lighten($green-color, 40%) !important;
+}
+
+a.cbi-bg-green-light {
+  &:hover,
+  &:focus {
+    background-color: lighten($green-color, 20%) !important;
+  }
+}
+
+.cbi-bg-red {
+  background-color: $red-color !important;
+}
+
+a.cbi-bg-red {
+  &:hover,
+  &:focus {
+    background-color: darken($red-color, 10%) !important;
+  }
+}
+
+.cbi-bg-amber {
+  background-color: $amber-color !important;
+}
+
+a.cbi-bg-amber {
+  &:hover,
+  &:focus {
+    background-color: darken($amber-color, 10%) !important;
+  }
+}
+
+.cbi-bg-amber-light {
+  background-color: lighten($amber-color, 30%) !important;
+}
+
+a.cbi-bg-amber-light {
+  &:hover,
+  &:focus {
+    background-color: lighten($amber-color, 20%) !important;
+  }
+}
+
+.cbi-bg-blue {
+  background-color: $blue-color !important;
+}
+
+a.cbi-bg-blue {
+  &:hover,
+  &:focus {
+    background-color: darken($blue-color, 10%) !important;
+  }
+}
+
+.cbi-bg-light-blue {
+  background-color: lighten($blue-color, 5%) !important;
+}
+
+a.cbi-bg-light-blue {
+  &:hover,
+  &:focus {
+    background-color: lighten($blue-color, 10%) !important;
+  }
+}
+
+.cbi-bg-indigo {
+  background-color: $indigo-color !important;
+}
+
+a.cbi-bg-indigo {
+  &:hover,
+  &:focus {
+    background-color: darken($indigo-color, 10%) !important;
+  }
+}
+
+.cbi-bg-purple {
+  background-color: $purple-color !important;
+}
+
+a.cbi-bg-purple {
+  &:hover,
+  &:focus {
+    background-color: darken($purple-color, 10%) !important;
+  }
+}
+
+.cbi-bg-orange {
+  background-color: $orange-color !important;
+}
+
+a.cbi-bg-orange {
+  &:hover,
+  &:focus {
+    background-color: darken($orange-color, 10%) !important;
+  }
+}
+
+.cbi-bg-yellow {
+  background-color: $yellow-color !important;
+}
+
+a.cbi-bg-yellow {
+  &:hover,
+  &:focus {
+    background-color: darken($yellow-color, 10%) !important;
+  }
+}
+
+.cbi-bg-teal {
+  background-color: $teal-color !important;
+}
+
+a.cbi-bg-teal {
+  &:hover,
+  &:focus {
+    background-color: darken($teal-color, 10%) !important;
+  }
+}
+
+.cbi-bg-cyan {
+  background-color: $cyan-color !important;
+}
+
+a.cbi-bg-cyan {
+  &:hover,
+  &:focus {
+    background-color: darken($cyan-color, 10%) !important;
+  }
+}
+
+.cbi-bg-sepia {
+  background-color: $sepia-color !important;
+}
+
+a.cbi-bg-sepia {
+  &:hover,
+  &:focus {
+    background-color: darken($sepia-color, 10%) !important;
+  }
+}
+
+.cbi-bg-geekblue {
+  background-color: $geekblue-10 !important;
+}
+
+a.cbi-bg-geekblue {
+  &:hover,
+  &:focus {
+    background-color: darken($geekblue-10, 10%) !important;
+  }
+}
+
+// Text ColorPicker
+.cbi-text-white {
+  color: $white-color !important;
+}
+
+.cbi-text-primary {
+  color: $primary-color !important;
+}
+
+a.cbi-text-primary {
+  &:hover,
+  &:focus {
+    color: $primary-color !important;
+  }
+}
+
+.cbi-text-secondary {
+  color: $secondary-color !important;
+}
+
+a.cbi-text-secondary {
+  &:hover,
+  &:focus {
+    color: $secondary-color !important;
+  }
+}
+
+.cbi-text-success {
+  color: $success-color !important;
+}
+
+a.cbi-text-success {
+  &:hover,
+  &:focus {
+    color: darken($success-color, 5%) !important;
+  }
+}
+
+.cbi-text-success-dark {
+  color: darken($success-color, 15%) !important;
+}
+
+a.cbi-text-success-dark {
+  &:hover,
+  &:focus {
+    color: darken($success-color, 20%) !important;
+  }
+}
+
+.cbi-text-info {
+  color: $info-color !important;
+}
+
+a.cbi-text-info {
+  &:hover,
+  &:focus {
+    color: darken($info-color, 5%) !important;
+  }
+}
+
+.cbi-text-warning {
+  color: $warning-color !important;
+}
+
+a.cbi-text-warning {
+  &:hover,
+  &:focus {
+    color: darken($warning-color, 5%) !important;
+  }
+}
+
+.cbi-text-danger {
+  color: $danger-color !important;
+}
+
+a.cbi-text-danger {
+  &:hover,
+  &:focus {
+    color: darken($danger-color, 5%) !important;
+  }
+}
+
+.cbi-text-light {
+  color: darken($grey-6, 8%) !important;
+}
+
+a.cbi-text-light {
+  &:hover,
+  &:focus {
+    color: darken($grey-7, 8%) !important;
+  }
+}
+
+.cbi-text-light-grey {
+  color: darken($grey-5, 5%) !important;
+}
+
+a.cbi-text-light-grey {
+  &:hover,
+  &:focus {
+    color: $grey-6 !important;
+  }
+}
+
+.cbi-text-grey {
+  color: $grey-7 !important;
+}
+
+a.cbi-text-grey {
+  &:hover,
+  &:focus {
+    color: $grey-9 !important;
+  }
+}
+
+.cbi-text-dark {
+  color: $grey-8 !important;
+}
+
+a.cbi-text-dark {
+  &:hover,
+  &:focus {
+    color: darken($grey-8, 5%) !important;
+  }
+}
+
+.cbi-text-black {
+  color: $black-color !important;
+}
+
+a.cbi-text-black {
+  &:hover,
+  &:focus {
+    color: darken($grey-8, 5%) !important;
+  }
+}
+
+.cbi-text-pink {
+  color: $pink-color !important;
+}
+
+a.cbi-text-pink {
+  &:hover,
+  &:focus {
+    color: darken($pink-color, 5%) !important;
+  }
+}
+
+.cbi-text-green {
+  color: $green-color !important;
+}
+
+a.cbi-text-green {
+  &:hover,
+  &:focus {
+    color: darken($green-color, 5%) !important;
+  }
+}
+
+.cbi-text-red {
+  color: $red-color !important;
+}
+
+a.cbi-text-red {
+  &:hover,
+  &:focus {
+    color: darken($red-color, 5%) !important;
+  }
+}
+
+.cbi-text-amber {
+  color: $amber-color !important;
+}
+
+a.cbi-text-amber {
+  &:hover,
+  &:focus {
+    color: darken($amber-color, 5%) !important;
+  }
+}
+
+.cbi-text-blue {
+  color: $blue-color !important;
+}
+
+a.cbi-text-blue {
+  &:hover,
+  &:focus {
+    color: darken($blue-color, 5%) !important;
+  }
+}
+
+.cbi-text-indigo {
+  color: $indigo-color !important;
+}
+
+a.cbi-text-indigo {
+  &:hover,
+  &:focus {
+    color: darken($indigo-color, 5%) !important;
+  }
+}
+
+.cbi-text-purple {
+  color: $purple-color !important;
+}
+
+a.cbi-text-purple {
+  &:hover,
+  &:focus {
+    color: darken($purple-color, 5%) !important;
+  }
+}
+
+.cbi-text-orange {
+  color: $orange-color !important;
+}
+
+a.cbi-text-orange {
+  &:hover,
+  &:focus {
+    color: darken($orange-color, 5%) !important;
+  }
+}
+
+.cbi-text-yellow {
+  color: $yellow-color !important;
+}
+
+a.cbi-text-yellow {
+  &:hover,
+  &:focus {
+    color: darken($yellow-color, 5%) !important;
+  }
+}
+
+.cbi-text-teal {
+  color: $teal-color !important;
+}
+
+a.cbi-text-teal {
+  &:hover,
+  &:focus {
+    color: darken($teal-color, 5%) !important;
+  }
+}
+
+.cbi-text-cyan {
+  color: $cyan-color !important;
+}
+
+a.cbi-text-cyan {
+  &:hover,
+  &:focus {
+    color: darken($cyan-color, 5%) !important;
+  }
+}
+
+.cbi-text-muted {
+  color: $grey-7 !important;
+}
+
+.cbi-text-geekblue {
+  color: $geekblue-10 !important;
+}
+
+a.cbi-text-geekblue {
+  &:hover,
+  &:focus {
+    color: $geekblue-8 !important;
+  }
+}
+
+.cbi-text-sepia {
+  color: $sepia-color !important;
+}
+
+a.cbi-text-sepia {
+  &:hover,
+  &:focus {
+    color: $sepia-color !important;
+  }
+}
+
+.cbi-icon-white {
+  color: $white-color !important;
+}
+
+// Border ColorPicker
+.cbi-border-primary {
+  border-color: $primary-color !important;
+}
+
+.cbi-border-secondary {
+  border-color: $secondary-color !important;
+}
+
+.cbi-border-success {
+  border-color: $success-color !important;
+}
+
+.cbi-border-success-dark {
+  border-color: darken($success-color, 15%) !important;
+}
+
+.cbi-border-info {
+  border-color: $info-color !important;
+}
+
+.cbi-border-warning {
+  border-color: $warning-color !important;
+}
+
+.cbi-border-danger {
+  border-color: $danger-color !important;
+}
+
+.cbi-border-light {
+  border-color: $grey-6 !important;
+}
+
+.cbi-border-dark {
+  border-color: $grey-8 !important;
+}
+
+.cbi-border-white {
+  border-color: $white-color !important;
+}
+
+.cbi-border-grey {
+  border-color: $grey-6 !important;
+}
+
+.cbi-border-pink {
+  border-color: $pink-color !important;
+}
+
+.cbi-border-green {
+  border-color: $green-color !important;
+}
+
+.cbi-border-red {
+  border-color: $red-color !important;
+}
+
+.cbi-border-amber {
+  border-color: $amber-color !important;
+}
+
+.cbi-border-blue {
+  border-color: $blue-color !important;
+}
+
+.cbi-border-indigo {
+  border-color: $indigo-color !important;
+}
+
+.cbi-border-purple {
+  border-color: $purple-color !important;
+}
+
+.cbi-border-orange {
+  border-color: $orange-color !important;
+}
+
+.cbi-border-yellow {
+  border-color: $yellow-color !important;
+}
+
+.cbi-border-teal {
+  border-color: $blue-color !important;
+}
+
+.cbi-border-cyan {
+  border-color: $cyan-color !important;
+}
+
+.cbi-border-sepia {
+  border-color: $sepia-color !important;
+}
+
+.cbi-border-geekblue {
+  border-color: $geekblue-10 !important;
+}
+
+// Button ColorPicker
+.cbi-btn-primary,
+a.cbi-btn-primary,
+.btn-primary {
+  color: $white-color !important;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+}
+
+.cbi-btn-primary-light,
+a.cbi-btn-primary-light,
+.btn-primary-light {
+  color: $grey-8 !important;
+  background-color: lighten($primary-color, 45%) !important;
+  border-color: lighten($primary-color, 45%) !important;
+
+  &:hover,
+  &:focus {
+    color: $grey-8 !important;
+    background-color: lighten($primary-color, 30%) !important;
+    border-color: lighten($primary-color, 30%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: lighten($primary-color, 50%) !important;
+    border-color: lighten($primary-color, 50%) !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $grey-8;
+    background-color: lighten($primary-color, 40%) !important;
+    border-color: lighten($primary-color, 40%) !important;
+  }
+}
+
+.cbi-btn-secondary,
+a.cbi-btn-secondary {
+  color: $white-color !important;
+  background-color: $secondary-color !important;
+  border-color: $secondary-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+.cbi-btn-success,
+a.cbi-btn-success {
+  color: $white-color !important;
+  background-color: $success-color !important;
+  border-color: $success-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($success-color, 10%) !important;
+    border-color: darken($success-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $success-color !important;
+    border-color: $success-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($success-color, 10%) !important;
+    border-color: darken($success-color, 10%) !important;
+  }
+}
+
+.cbi-btn-success-dark,
+a.cbi-btn-success-dark {
+  color: $white-color !important;
+  background-color: darken($success-color, 15%) !important;
+  border-color: darken($success-color, 15%) !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($success-color, 20%) !important;
+    border-color: darken($success-color, 20%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $success-color !important;
+    border-color: $success-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($success-color, 20%) !important;
+    border-color: darken($success-color, 20%) !important;
+  }
+}
+
+.cbi-btn-info,
+a.cbi-btn-info {
+  color: $white-color !important;
+  background-color: $info-color !important;
+  border-color: $info-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($info-color, 10%) !important;
+    border-color: darken($info-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $info-color !important;
+    border-color: $info-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($info-color, 10%) !important;
+    border-color: darken($info-color, 10%) !important;
+  }
+}
+
+.cbi-btn-warning,
+a.cbi-btn-warning {
+  color: $white-color !important;
+  background-color: $warning-color !important;
+  border-color: $warning-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($warning-color, 10%) !important;
+    border-color: darken($warning-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $warning-color !important;
+    border-color: $warning-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($warning-color, 10%) !important;
+    border-color: darken($warning-color, 10%) !important;
+  }
+}
+
+.cbi-btn-yellow,
+a.cbi-btn-yellow {
+  color: $grey-9 !important;
+  background-color: $yellow-color !important;
+  border-color: $yellow-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($yellow-color, 10%) !important;
+    border-color: darken($yellow-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $yellow-color !important;
+    border-color: $yellow-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($yellow-color, 10%) !important;
+    border-color: darken($yellow-color, 10%) !important;
+  }
+}
+
+.cbi-btn-danger,
+a.cbi-btn-danger,
+.cbi-btn-red,
+a.cbi-btn-red {
+  color: $white-color !important;
+  background-color: $danger-color !important;
+  border-color: $danger-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($danger-color, 10%) !important;
+    border-color: darken($danger-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $danger-color !important;
+    border-color: $danger-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($danger-color, 10%) !important;
+    border-color: darken($danger-color, 10%) !important;
+  }
+}
+
+.cbi-btn-light,
+a.cbi-btn-light {
+  color: $grey-7 !important;
+  background-color: $grey-4 !important;
+  border-color: $grey-4 !important;
+
+  &:hover,
+  &:focus {
+    color: $grey-7 !important;
+    background-color: $grey-5 !important;
+    border-color: $grey-5 !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $grey-3 !important;
+    border-color: $grey-3 !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $grey-9 !important;
+    background-color: $grey-4 !important;
+    border-color: $grey-4 !important;
+  }
+}
+
+.cbi-btn-dark,
+a.cbi-btn-dark {
+  color: $white-color !important;
+  background-color: $dark-color !important;
+  border-color: $dark-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($dark-color, 10%) !important;
+    border-color: darken($dark-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $dark-color !important;
+    border-color: $dark-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($dark-color, 10%) !important;
+    border-color: darken($dark-color, 10%) !important;
+  }
+}
+
+.cbi-btn-purple,
+a.cbi-btn-purple {
+  color: $white-color !important;
+  background-color: $purple-color !important;
+  border-color: $purple-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($purple-color, 10%) !important;
+    border-color: darken($purple-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $purple-color !important;
+    border-color: $purple-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($purple-color, 10%) !important;
+    border-color: darken($purple-color, 10%) !important;
+  }
+}
+
+.cbi-btn-sepia,
+a.cbi-btn-sepia {
+  color: $white-color !important;
+  background-color: $sepia-color !important;
+  border-color: $sepia-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($sepia-color, 15%) !important;
+    border-color: darken($sepia-color, 15%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $sepia-color !important;
+    border-color: $sepia-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($sepia-color, 15%) !important;
+    border-color: darken($sepia-color, 15%) !important;
+  }
+}
+
+.cbi-btn-geekblue,
+a.cbi-btn-geekblue {
+  color: $white-color !important;
+  background-color: $geekblue-8 !important;
+  border-color: $geekblue-8 !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($geekblue-8, 10%) !important;
+    border-color: darken($geekblue-8, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $geekblue-8 !important;
+    border-color: $geekblue-8 !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($geekblue-8, 15%) !important;
+    border-color: darken($geekblue-8, 15%) !important;
+  }
+}
+
+.cbi-btn-cyan,
+a.cbi-btn-cyan {
+  color: $white-color !important;
+  background-color: $cyan-color !important;
+  border-color: $cyan-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($cyan-color, 10%) !important;
+    border-color: darken($cyan-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $cyan-color !important;
+    border-color: $cyan-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($cyan-color, 12%) !important;
+    border-color: darken($cyan-color, 12%) !important;
+  }
+}
+
+.cbi-btn-white,
+a.cbi-btn-white {
+  color: $text-color !important;
+  background-color: $white-color !important;
+  border-color: $white-color !important;
+
+  &:hover,
+  &:focus {
+    color: $text-color !important;
+    background-color: darken($white-color, 10%) !important;
+    border-color: darken($white-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $white-color !important;
+    border-color: $white-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $text-color !important;
+    background-color: darken($white-color, 10%) !important;
+    border-color: darken($white-color, 10%) !important;
+  }
+}
+
+.cbi-btn-orange,
+a.cbi-btn-orange {
+  color: $white-color !important;
+  background-color: $orange-color !important;
+  border-color: $orange-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($orange-color, 10%) !important;
+    border-color: darken($orange-color, 10%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $orange-color !important;
+    border-color: $orange-color !important;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    color: $white-color !important;
+    background-color: darken($orange-color, 12%) !important;
+    border-color: darken($orange-color, 12%) !important;
+  }
+}
+
+//Btn Outline
+.cbi-btn-outline-primary,
+a.cbi-btn-outline-primary {
+  color: $primary-color !important;
+  background-color: transparent !important;
+  border-color: $primary-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $primary-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-secondary,
+a.cbi-btn-outline-secondary {
+  color: $secondary-color !important;
+  background-color: transparent !important;
+  border-color: $secondary-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $secondary-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-success,
+a.cbi-btn-outline-success {
+  color: $success-color !important;
+  background-color: transparent !important;
+  border-color: $success-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $success-color !important;
+    border-color: $success-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $success-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-success-dark,
+a.cbi-btn-outline-success-dark {
+  color: $success-color !important;
+  background-color: transparent !important;
+  border-color: darken($success-color, 15%) !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: darken($success-color, 20%) !important;
+    border-color: darken($success-color, 20%) !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: darken($success-color, 20%) !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-info,
+a.cbi-btn-outline-info {
+  color: $info-color !important;
+  background-color: transparent !important;
+  border-color: $info-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $info-color !important;
+    border-color: $info-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $info-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-warning,
+a.cbi-btn-outline-warning {
+  color: $warning-color !important;
+  background-color: transparent !important;
+  border-color: $warning-color !important;
+
+  &:hover,
+  &:focus {
+    color: $grey-9 !important;
+    background-color: $warning-color !important;
+    border-color: $warning-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $warning-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-danger,
+a.cbi-btn-outline-danger,
+.cbi-btn-outline-red,
+a.cbi-btn-outline-red {
+  color: $danger-color !important;
+  background-color: transparent !important;
+  border-color: $danger-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $danger-color !important;
+    border-color: $danger-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $danger-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-light,
+a.cbi-btn-outline-light {
+  color: $grey-7 !important;
+  background-color: transparent !important;
+  border-color: $grey-5 !important;
+
+  &:hover,
+  &:focus {
+    color: $grey-7 !important;
+    background-color: $grey-5 !important;
+    border-color: $grey-5 !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $grey-4 !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-dark,
+a.cbi-btn-outline-dark {
+  color: $grey-9 !important;
+  background-color: transparent !important;
+  border-color: $grey-9 !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $grey-9 !important;
+    border-color: $grey-9 !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $grey-9 !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-sepia,
+a.cbi-btn-outline-sepia {
+  color: $white-color !important;
+  background-color: transparent !important;
+  border-color: $sepia-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $sepia-color !important;
+    border-color: $sepia-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $sepia-color !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-geekblue,
+a.cbi-btn-outline-geekblue {
+  color: $white-color !important;
+  background-color: transparent !important;
+  border-color: $geekblue-10 !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $geekblue-10 !important;
+    border-color: $geekblue-10 !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $geekblue-6 !important;
+    background-color: transparent !important;
+  }
+}
+
+.cbi-btn-outline-orange,
+a.cbi-btn-outline-orange {
+  color: $white-color !important;
+  background-color: transparent !important;
+  border-color: $orange-color !important;
+
+  &:hover,
+  &:focus {
+    color: $white-color !important;
+    background-color: $orange-color !important;
+    border-color: $orange-color !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $orange-color !important;
+    background-color: transparent !important;
+  }
+}
+
+// Badge ColorPicker
+.cbi-badge-primary {
+  background-color: $primary-color !important;
+}
+
+.cbi-badge-primary-light {
+  background-color: $primary-4 !important;
+}
+
+.cbi-badge-secondary {
+  background-color: $secondary-color !important;
+}
+
+.cbi-badge-success {
+  background-color: $success-color !important;
+}
+
+.cbi-badge-success-dark {
+  background-color: darken($success-color, 15%) !important;
+}
+
+.cbi-badge-info {
+  background-color: $info-color !important;
+}
+
+.cbi-badge-warning {
+  background-color: $warning-color !important;
+}
+
+.cbi-badge-danger {
+  background-color: $danger-color !important;
+}
+
+.cbi-badge-light {
+  background-color: $grey-4 !important;
+}
+
+.cbi-badge-dark {
+  background-color: $black-color !important;
+}
+
+.cbi-badge-white {
+  background-color: $white-color !important;
+}
+
+.cbi-badge-grey {
+  background-color: $grey-6 !important;
+}
+
+.cbi-badge-light-grey {
+  background-color: $grey-5 !important;
+}
+
+.cbi-badge-pink {
+  background-color: $pink-color !important;
+}
+
+.cbi-badge-green {
+  background-color: $green-color !important;
+}
+
+.cbi-badge-green-light {
+  background-color: lighten($green-color, 40%) !important;
+}
+
+.cbi-badge-red {
+  background-color: $red-color !important;
+}
+
+.cbi-badge-amber {
+  background-color: $amber-color !important;
+}
+
+.cbi-badge-amber-light {
+  background-color: lighten($amber-color, 30%) !important;
+}
+
+.cbi-badge-blue {
+  background-color: $blue-color !important;
+}
+
+.cbi-badge-light-blue {
+  background-color: lighten($blue-color, 5%) !important;
+}
+
+.cbi-badge-indigo {
+  background-color: $indigo-color !important;
+}
+
+.cbi-badge-purple {
+  background-color: $purple-color !important;
+}
+
+.cbi-badge-orange {
+  background-color: $orange-color !important;
+}
+
+.cbi-badge-yellow {
+  background-color: $yellow-color !important;
+}
+
+.cbi-badge-teal {
+  background-color: $teal-color !important;
+}
+
+.cbi-badge-cyan {
+  background-color: $cyan-color !important;
+}
+
+.cbi-badge-sepia {
+  background-color: $sepia-color !important;
+}
+
+.cbi-badge-geekblue {
+  background-color: $geekblue-10 !important;
+}
+
+
+
+
+
+
+

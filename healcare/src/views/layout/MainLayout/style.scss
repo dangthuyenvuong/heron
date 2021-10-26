@@ -1,0 +1,24 @@
+.ant-layout-sider-trigger{
+    background: white;
+    display: none;
+}
+
+.menu-section{
+    padding: 10px;
+    line-height: 23px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.ant-menu-item{
+    margin-bottom: 0 !important;
+    font-size: 13px;
+    user-select: none;
+}
+.ant-menu-sub.ant-menu-inline{
+    background: white;
+    user-select: none;
+}
+.ant-menu-submenu-title{
+    user-select: none;
+}

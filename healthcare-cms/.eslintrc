@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "react-app"
+    ],
+    "rules": {
+        "import/no-anonymous-default-export": "off",
+        "no-useless-escape": "off",
+        "react-hooks/exhaustive-deps": "off"
+    }
+}

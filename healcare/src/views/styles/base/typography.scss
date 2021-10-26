@@ -1,0 +1,268 @@
+/*Typography Styles*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $header-text-color;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+
+  .framed-layout & {
+    font-size: $h2-font-size;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: $h3-font-size;
+    }
+  }
+
+  .boxed-layout & {
+    font-size: $h3-font-size;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: $h4-font-size;
+    }
+  }
+
+  @media screen and (min-width: $screen-xxl-min) {
+    font-size: $h1-font-size + 6px;
+
+    .boxed-layout & {
+      font-size: $h3-font-size;
+    }
+  }
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+.cbi-h1-lg {
+  font-size: $h1-font-size + 6px;
+}
+
+.cbi-text-strikethrough {
+  text-decoration: line-through !important;
+}
+
+.cbi-text-underline {
+  text-decoration: underline !important;
+}
+
+/*Font size Classes*/
+/*8px*/
+.cbi-fs-xxs {
+  font-size: $font-size-sm - 4px;
+}
+
+/*10px*/
+.cbi-fs-xs {
+  font-size: $font-size-sm - 2px;
+}
+
+/*11px*/
+.cbi-fs-11 {
+  font-size: $font-size-sm - 1px;
+}
+
+/*12px*/
+.cbi-fs-sm {
+  font-size: $font-size-sm;
+  line-height: 1.5;
+}
+
+/*14px*/
+.cbi-fs-md {
+  font-size: $font-size-base;
+  line-height: 1;
+}
+
+/*16px*/
+.cbi-fs-lg {
+  font-size: $font-size-lg;
+  line-height: 1;
+}
+
+/*20px*/
+.cbi-fs-xl {
+  font-size: $font-size-lg + 4px;
+  line-height: 1;
+}
+
+/*24px*/
+.cbi-fs-xxl {
+  font-size: $font-size-lg + 8px;
+  line-height: 1.3;
+
+  @media screen and (max-width: $screen-lg-max) {
+    font-size: $font-size-lg + 4px;
+  }
+}
+
+/*28px*/
+.cbi-fs-2xl {
+  font-size: (2*$font-size-base) !important;
+  line-height: 1;
+
+  @media screen and (max-width: 1199px) {
+    font-size: (2*$font-size-base - 8) !important;
+  }
+}
+
+/*30px*/
+.cbi-fs-xxxl {
+  font-size: 2*$font-size-lg - 2px;
+  line-height: 1;
+
+  @media screen and (max-width: ($screen-xl-min + 166px)) {
+    font-size: 2*$font-size-lg - 4px;
+  }
+
+  @media screen and (max-width: $screen-lg-max) {
+    font-size: 2*$font-size-lg - 6px;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: 2*$font-size-lg - 8px;
+  }
+}
+
+/*40px*/
+.cbi-fs-xlxl {
+  font-size: 2*$font-size-lg + 8px;
+  line-height: 1;
+
+  @media screen and (max-width: $screen-lg-max) {
+    font-size: 2*$font-size-lg;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: 2*$font-size-lg - 4px;
+  }
+}
+
+/*50px*/
+.cbi-fs-icon-lg {
+  font-size: 3*$font-size-lg + 2px;
+  line-height: 1;
+
+  @media screen and (max-width: ($screen-xl-min + 166px)) {
+    font-size: 2*$font-size-lg + 6px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    font-size: 2*$font-size-lg - 2px;
+  }
+}
+
+/*54px*/
+.cbi-fs-iconcard {
+  font-size: 3*$font-size-lg + 6px;
+  line-height: 1;
+
+  @media screen and (max-width: ($screen-xl-min + 166px)) {
+    font-size: 2*$font-size-lg + 2px;
+  }
+}
+
+// Text Transform class
+.cbi-text-lowercase {
+  text-transform: lowercase;
+}
+
+.cbi-text-uppercase {
+  text-transform: uppercase;
+}
+
+.cbi-text-capitalize {
+  text-transform: capitalize;
+}
+
+// Font Weight class
+.cbi-font-weight-light {
+  font-weight: $font-weight-light;
+}
+
+.cbi-font-weight-normal {
+  font-weight: $font-weight-normal;
+}
+
+.cbi-font-weight-medium {
+  font-weight: $font-weight-medium;
+}
+
+.cbi-font-weight-semi-bold {
+  font-weight: $font-weight-semi-bold;
+}
+
+.cbi-font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
+.cbi-font-weight-heavy {
+  font-weight: $font-weight-heavy;
+}
+
+// Font Italic class
+.cbi-font-italic {
+  font-style: italic;
+}
+
+// Letter Spacing class
+.cbi-letter-spacing-base {
+  letter-spacing: $letter-spacing-base;
+}
+
+.cbi-letter-spacing-lg {
+  letter-spacing: $letter-spacing-lg;
+}
+
+.cbi-letter-spacing-xl {
+  letter-spacing: $letter-spacing-xl;
+}
+
+// Text class
+.cbi-text-justify {
+  text-align: justify !important;
+}
+
+.cbi-text-nowrap {
+  white-space: nowrap !important;
+}
+
+.cbi-text-left {
+  text-align: left !important;
+}
+
+.cbi-text-right {
+  text-align: right !important;
+}
+
+.cbi-text-center {
+  text-align: center !important;
+}
+
+// class use for extend
+@include gx-text-truncate {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

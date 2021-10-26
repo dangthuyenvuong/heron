@@ -1,0 +1,166 @@
+/*Pricing Tables Styles*/
+.cbi-price-tables {
+  position: relative;
+}
+
+.cbi-package {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+  @include flex-display(flex, column, nowrap);
+  @include border-radius(10px);
+  @include box-shadow($gx-card-shadow);
+  @include transition(all 0.2s ease-in-out);
+  height: calc(100%  -  15px);
+  @include scale(0.95);
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include scale(1);
+    @include box-shadow(0 0 4px fade($black-color, 55%));
+
+    .cbi-pt-dark & {
+      @include border-radius(20px);
+    }
+  }
+
+  .cbi-pt-classic & {
+    border: 0 none;
+    @include border-radius(0);
+  }
+
+  &.cbi-highlight {
+    @include scale(1);
+    z-index: 2;
+  }
+
+  &-header {
+    padding: $gx-pricing-table-base;
+    text-align: center;
+
+    & > .cbi-price {
+      display: inline-block;
+      font-size: 36px;
+      font-weight: $font-weight-medium;
+      margin-left: 0;
+      margin-bottom: 12px;
+      color: $white-color;
+
+      & > i {
+        display: inline-block;
+        margin-right: 6px;
+        font-weight: bold;
+      }
+    }
+
+    & h5 {
+      color: inherit;
+    }
+
+    &.cbi-text-black {
+      & > .cbi-price {
+        color: $grey-8 !important;
+      }
+    }
+
+    @media only screen and (max-width: $screen-md-max) {
+      padding-left: $gx-pricing-table-base - 10px;
+      padding-right: $gx-pricing-table-base - 10px;
+    }
+  }
+
+  &-body {
+    padding: ($gx-pricing-table-base + 20px) $gx-pricing-table-base;
+    @include flex-display(flex, column, nowrap);
+    @include flex-only(1);
+    @include align-items(center);
+
+    @media only screen and (max-width: $screen-md-max) {
+      padding-left: $gx-pricing-table-base - 10px;
+      padding-right: $gx-pricing-table-base - 10px;
+    }
+  }
+
+  &-items {
+    list-style: none;
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding-left: 0;
+    @include flex-only(1);
+
+    & li {
+      margin-bottom: 16px;
+      @inkclude clearfix();
+      line-height: inherit;
+
+      & i {
+        float: left;
+        min-width: 20px;
+        margin-right: 16px;
+        line-height: inherit;
+      }
+
+      & span {
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &-footer {
+    padding-top: $gx-pricing-table-base;
+
+    & .ant-btn {
+      text-transform: capitalize;
+      border: 0 none;
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-max) {
+    &:hover,
+    &:focus,
+    &:active,
+    &.cbi-highlight {
+      @include scale(1);
+    }
+  }
+}
+
+.cbi-text-black {
+  & .cbi-text-white {
+    color: $grey-8 !important;
+  }
+}
+
+.cbi-pt-circle {
+  & .cbi-package-header {
+    @include border-radius($border-radius-circle);
+    height: 224px;
+    width: 224px;
+    margin: 40px auto 0;
+    @include align-items(center);
+
+    & .cbi-price {
+      margin-top: 30px;
+
+      @media only screen and (max-width: $screen-md-max) {
+        font-size: 26px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+      }
+    }
+
+    & .cbi-letter-spacing-base {
+      @media only screen and (max-width: $screen-md-max) {
+        letter-spacing: 1px;
+      }
+    }
+
+    @media only screen and (max-width: $screen-md-max) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+}

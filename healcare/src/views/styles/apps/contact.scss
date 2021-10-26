@@ -1,0 +1,114 @@
+/*Contact Apps Styles*/
+
+.cbi-contact-item {
+  @include align-items(center);
+  @include flex-display(flex, row, wrap);
+  padding: 8px 28px;
+
+  &:not(:last-child) {
+    border-bottom: $border-style-base $border-width-base $border-color;
+  }
+}
+
+.cbi-dragndrop-item {
+  padding: $dragndrop-paddding-tb $dragndrop-paddding-lr;
+
+  & .cbi-draggable-icon {
+    margin-left: -$dragndrop-paddding-lr;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-right: 5px;
+  }
+}
+
+.cbi-contact-list-info {
+  padding-left: 10px;
+
+  .cbi-email {
+    word-break: break-all;
+  }
+
+  .cbi-toolbar-separator {
+    display: inline-block;
+
+    @media screen and (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-left: 0;
+    max-width: calc(100%  -  50px);
+
+    .cbi-job-title {
+      display: none;
+    }
+  }
+}
+
+.cbi-module-contact-content {
+  @include flex-only(1);
+}
+
+.cbi-module-contact-right {
+  margin-left: 8px;
+}
+
+.cbi-contact-name {
+  font-size: 15px;
+}
+
+.cbi-draggable-icon {
+  cursor: all-scroll;
+  color: $grey-7;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: all-scroll;
+    color: $grey-9;
+  }
+}
+
+.cbi-module-side-nav {
+  padding: 20px 0;
+}
+
+.cbi-modal-box-row {
+  @include flex-display(flex, row, wrap);
+
+  & .cbi-modal-box-avatar {
+    @include flex-order(2);
+    margin-left: 16px;
+
+    & .ant-avatar {
+      width: $size-120;
+      height: $size-120;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      @include flex-order(1);
+      margin-left: 0;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+
+  & .cbi-modal-box-form-item {
+    @include flex-order(1);
+    @include flex-only(1);
+
+    @media screen and (max-width: $screen-xs-max) {
+      @include flex-order(2);
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    @include flex-display(flex, column, nowrap);
+  }
+}
+
+.cbi-dragndrop-actions {
+  @include flex-display(flex, row, wrap);
+}

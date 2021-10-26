@@ -1,0 +1,462 @@
+/* Apps Style */
+.cbi-app-module {
+  position: relative;
+  @include flex-display(flex, row, wrap);
+  margin: -$layout-main-content-padding -$layout-main-content-padding 0;
+  flex: 1;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin: -($layout-main-content-padding-res + 5px) -$layout-main-content-padding-res 0;
+  }
+
+  .cbi-container-wrap & {
+    margin: 0;
+    margin-bottom: $gx-card-margin-base;
+  }
+}
+
+.cbi-module-side {
+  position: relative;
+  z-index: 2;
+  @include flex-display(flex, column, nowrap);
+  @include flex(0, 1, $app-sidebar-width);
+  min-width: $app-sidebar-width;
+
+  @media screen and (max-width: $screen-md-max) {
+    min-width: $sidebar-width - 20px;
+    background-color: $white-color;
+  }
+}
+
+.cbi-module-side-header {
+  padding: 10px;
+  min-height: $layout-header-height + 7px;
+  border-bottom: $border-style-base $border-width-base $border-color;
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+  @include align-items(center);
+  background-color: lighten($grey-2, 0.5%);
+  color: darken($grey-8, 2%);
+
+  @media screen and (max-width: $screen-md-max) {
+    min-height: $layout-header-height;
+  }
+}
+
+.cbi-module-logo {
+  @include flex-display(flex, row, wrap);
+  font-size: 20px;
+
+  & i {
+    font-size: 28px;
+    line-height: 18px;
+  }
+}
+
+.cbi-module-user-info,
+.cbi-module-side-content {
+  @include flex-display(flex, column, nowrap);
+  @include flex-only(1);
+}
+
+.cbi-module-user-detail {
+  font-size: 12px;
+}
+
+.cbi-module-add-task {
+  @include flex-display(flex, row, wrap);
+  padding: 24px;
+
+  & .ant-btn {
+    margin-bottom: 0;
+  }
+}
+
+.cbi-module-nav {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+
+  & li {
+    @include flex-display(flex, column, nowrap);
+  }
+
+  & li .cbi-link {
+    padding: 5px 29px;
+    color: lighten($black-color, 60%);
+    @include flex-display(flex, row, wrap);
+    @include align-items(center);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $black-color;
+    }
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+
+  & li i {
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  & li span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  & li.cbi-module-nav-label {
+    padding: 12px 29px;
+  }
+}
+
+.cbi-module-box {
+  position: relative;
+  z-index: 2;
+  @include flex-display(flex, column, nowrap);
+  @include flex(1, 1, auto);
+  max-width: calc(100% - $app-sidebar-width + 1px);
+
+  @media screen and (max-width: $screen-md-max) {
+    max-width: 100%;
+  }
+}
+
+.cbi-module-box-header {
+  padding: 10px 26px;
+  min-height: 79px;
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+  background-color: $white-color;
+  border-bottom: $border-style-base $border-width-base $border-color;
+
+  @media screen and (max-width: $screen-md-max) {
+    position: relative;
+    min-height: 58px;
+    padding: 5px 26px 5px 110px;
+  }
+
+  & .cbi-drawer-btn {
+    @media screen and (max-width: $screen-md-max) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      border-right: $border-style-base $border-width-base $border-color;
+      height: 58px;
+      width: 98px;
+      @include flex-display(flex, column, nowrap);
+      @include justify-content(center);
+      @include align-items(center);
+      @include border-radius(0);
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}
+
+.cbi-module-box-header-inner {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  @include justify-content(space-between);
+}
+
+.cbi-module-box-header-right {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  margin-left: auto;
+}
+
+.cbi-module-box-content {
+  background-color: $white-color;
+  @include flex-display(flex, column, nowrap);
+  @include flex(1);
+}
+
+.cbi-module-box-topbar {
+  padding: 8px 28px;
+  min-height: 65px;
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  border-bottom: $border-style-base $border-width-base $border-color;
+
+  & label.ant-checkbox-wrapper {
+    margin-right: 10px;
+  }
+
+  & .ant-dropdown-trigger {
+    cursor: pointer;
+    margin-right: 10px;
+
+    & .icon:before {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &-todo {
+    padding-left: 28px;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    min-height: 58px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.cbi-module-list-icon {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  padding-right: 10px;
+
+  & .cbi-bar-icon {
+    & .cbi-icon-menu:before {
+      top: 3px;
+      position: relative;
+    }
+  }
+}
+
+.cbi-toolbar-separator {
+  border-left: $border-style-base $border-width-base $border-color;
+  height: 100%;
+  width: 1px;
+  margin: 0 12px;
+}
+
+.cbi-module-list {
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+}
+
+.cbi-module-list-item {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  padding: 15px 28px;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: $border-style-base $border-width-base $border-color;
+  }
+
+  &.cbi-mail-cell {
+    @include align-items(start);
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.cbi-module-detail-header {
+  margin-bottom: 10px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 0;
+  }
+}
+
+.cbi-module-list-info {
+  @include flex-display(flex, row, nowrap);
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex(1);
+  max-width: calc(100%  -  140px);
+
+  @media screen and (max-width: $screen-xs-max) {
+    max-width: calc(100%  -  100px);
+  }
+}
+
+.cbi-module-todo-content {
+  position: relative;
+  @include flex(1);
+
+  & .cbi-subject {
+    margin-bottom: 5px;
+  }
+}
+
+.cbi-module-todo-right {
+  margin-left: 8px;
+}
+
+.cbi-module-sidenav {
+  background-color: $white-color;
+  border-right: $border-style-base $border-width-base $border-color;
+  position: relative;
+  z-index: 9;
+
+  & .cbi-chat-sidenav-main {
+    max-width: 300px;
+    min-width: 300px;
+    width: 90%;
+  }
+}
+
+.cbi-module-date {
+  max-width: 160px;
+}
+
+.cbi-module-detail-item {
+  padding: 10px 28px;
+}
+
+.cbi-task-title {
+  font-size: $h3-font-size;
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: $h4-font-size;
+  }
+}
+
+.cbi-chat-todo-avatar {
+  margin-right: 15px;
+}
+
+.cbi-module-side-scroll {
+  height: calc(100vh  -  201px) !important;
+
+  .framed-layout & {
+    height: calc(100vh - 201px + 2 * $framed-layout-base) !important;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    height: calc(100vh  -  $layout-header-height) !important;
+
+    .framed-layout & {
+      height: calc(100vh  -  $layout-header-height) !important;
+    }
+  }
+
+  & > div:first-child {
+    overflow-y: scroll !important;
+  }
+}
+
+.cbi-module-content-scroll {
+  height: calc(100vh  -  266px) !important;
+
+  .framed-layout & {
+    height: calc(100vh - 266px + 2 * $framed-layout-base) !important;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    height: calc(100vh  -  238px) !important;
+
+    .framed-layout & {
+      height: calc(100vh  -  238px) !important;
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    height: calc(100vh  -  216px) !important;
+  }
+
+  & > div:first-child {
+    overflow-y: scroll !important;
+  }
+}
+
+.cbi-todo-detail-content-scroll {
+  height: calc(100vh  -  319px) !important;
+
+  .framed-layout & {
+    height: calc(100vh - 319px + 2 * $framed-layout-base) !important;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    height: calc(100vh  -  291px) !important;
+
+    .framed-layout & {
+      height: calc(100vh  -  291px) !important;
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    height: calc(100vh  -  270px) !important;
+  }
+
+  & > div:first-child {
+    overflow-y: scroll !important;
+  }
+}
+
+.cbi-loader-view {
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex(1);
+
+  & .ant-spin {
+    margin: 0;
+  }
+
+  .cbi-app-module & {
+    height: calc(100vh  -  266px) !important;
+
+    .framed-layout & {
+      height: calc(100vh - 266px + 2 * $framed-layout-base) !important;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      height: calc(100vh  -  238px) !important;
+
+      .framed-layout & {
+        height: calc(100vh  -  238px) !important;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      height: calc(100vh  -  244px) !important;
+    }
+  }
+
+  .cbi-chat-module & {
+    height: calc(100vh  -  122px) !important;
+
+    .framed-layout & {
+      height: calc(100vh - 122px + 2 * $framed-layout-base) !important;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      .framed-layout & {
+        height: calc(100vh  -  122px) !important;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      height: calc(100vh  -  100px) !important;
+    }
+  }
+}
+
+.cbi-module-default {
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 100%;
+  padding: 15px;
+}
+
+.cbi-no-content-found {
+  @include flex-only(1);
+  font-size: $font-size-lg;
+}
+
+.cbi-task {
+  &-des,
+  &-input {
+    padding-left: 0;
+  }
+}
+

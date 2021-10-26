@@ -1,0 +1,214 @@
+/*Login Styles*/
+.cbi-login-container {
+  position: relative;
+  height: 100%;
+  padding-bottom: $size-30;
+  @include flex-only(1);
+
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.cbi-login-content {
+  max-width: 420px;
+  width: 94%;
+  margin: auto;
+  padding: 35px 35px 20px;
+  background-color: $white-color;
+  @include border-radius($border-radius-lg);
+  @include box-shadow($gx-card-shadow);
+  font-size: 14px;
+
+  & .ant-input {
+    background-color: $grey-3;
+    height: auto;
+    padding: 6px 12px;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $primary-color;
+    }
+  }
+
+  & .ant-form-item-control-wrapper {
+    width: 100%;
+  }
+
+  & .ant-form-item-children {
+    display: block;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 20px 20px 10px;
+  }
+}
+
+.cbi-login-header {
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
+  }
+}
+
+.gx-app-login-wrap {
+  height: 100%;
+  @include flex-display(flex, column, nowrap);
+  @include justify-content(center);
+  overflow-x: hidden;
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: 20px;
+    @include justify-content(flex-start);
+  }
+}
+
+.cbi-app-login-container {
+  position: relative;
+  max-width: 680px;
+  width: 94%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-bottom: 20px ;
+  }
+
+  & .cbi-loader-view {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+.cbi-app-login-main-content {
+  @include flex-display(flex, row, wrap);
+  background-color: $white-color;
+  @include box-shadow($gx-card-shadow);
+  @include border-radius($border-radius-lg + 2px);
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.cbi-app-login-content {
+  padding: 35px 35px 20px;
+  width: 60%;
+
+  & .ant-input {
+    background-color: $grey-3;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $primary-color;
+    }
+  }
+
+  & .cbi-btn {
+    padding: 6px 35px !important;
+    height: auto;
+  }
+
+  & .ant-form-item-control-wrapper {
+    width: 100%;
+  }
+
+  & .ant-form-item-children {
+    display: block;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 100%;
+    padding: 20px 20px 10px;
+  }
+}
+
+.cbi-app-login-header {
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
+  }
+}
+
+.cbi-app-logo-content {
+  color: $white-color;
+  padding: 35px 35px 20px;
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  @include flex-display(flex, column, nowrap);
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  & h1 {
+    color: $white-color;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 100%;
+    padding: 20px 20px 10px;
+  }
+
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      background-color: fade($primary-color, 70%);
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.cbi-app-logo-wid {
+  margin-bottom: auto;
+}
+
+.cbi-app-social-block {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  @include justify-content(space-between);
+
+  & .cbi-social-link,
+  & .cbi-social-link li {
+    margin: 0;
+  }
+
+  & .cbi-social-link span {
+    border: $border-style-base $border-width-base $primary-color;
+    @include border-radius($border-radius-circle);
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+}

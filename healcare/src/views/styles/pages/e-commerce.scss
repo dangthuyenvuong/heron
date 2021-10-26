@@ -1,0 +1,177 @@
+/*E-commerce Styles*/
+
+.cbi-product-item {
+  overflow: hidden;
+  background: $component-background;
+  @include border-radius($border-radius-lg + 2px);
+  margin-bottom: $gx-card-margin-base;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: $gx-card-margin-base-res;
+  }
+  @include box-shadow($gx-card-shadow);
+}
+
+.cbi-product-body {
+  padding: $card-padding-wider;
+
+  & + .cbi-product-footer {
+    padding-top: 0;
+  }
+
+  & :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cbi-product-image {
+  & > img {
+    width: 100%;
+  }
+}
+
+.cbi-product-footer {
+  padding: $card-padding-wider;
+  padding-bottom: $card-padding-wider - 9px;
+}
+
+.cbi-product-horizontal {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+
+  & .cbi-product-image {
+    width: 25%;
+
+    @media screen and (max-width: $screen-lg-max) {
+      width: 33.33333%;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      width: 25%;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+  }
+
+  & .cbi-product-body {
+    width: 53%;
+
+    @media screen and (min-width: ($screen-xl-min + 200px)) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: $screen-lg-max) {
+      width: 41.66667%;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+
+    & + .cbi-product-footer {
+      padding-top: $card-padding-wider;
+
+      @media screen and (max-width: $screen-sm-max) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  & .cbi-product-footer {
+    width: 22%;
+    text-align: center;
+
+    @media screen and (min-width: ($screen-xl-min + 200px)) {
+      width: 20%;
+    }
+
+    & .ant-btn:not(:last-child) {
+      margin-left: 8px;
+      margin-right: 8px;
+
+      @media screen and (max-width: $screen-sm-max) {
+        margin-left: 0;
+      }
+    }
+
+    & .ant-btn:last-child {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  & .cbi-product-image .cbi-grid-thumb-equal {
+    padding-bottom: 82%;
+
+    @media screen and (min-width: ($screen-xl-min + 200px)) {
+      padding-bottom: 55%;
+    }
+
+    @media screen and (max-width: $screen-lg-max) {
+      padding-bottom: 80%;
+    }
+
+    @media screen and (max-width: ($screen-lg-max - 119px)) {
+      padding-bottom: 90%;
+    }
+
+    @media screen and (max-width: ($screen-lg-max - 199px)) {
+      padding-bottom: 110%;
+
+      .horizontal-layout & {
+        padding-bottom: 80%;
+      }
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      padding-bottom: 88%;
+
+      .horizontal-layout & {
+        padding-bottom: 128%;
+      }
+    }
+
+    @media screen and (max-width: 849px) {
+      padding-bottom: 110%;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      padding-bottom: 44%;
+
+      .horizontal-layout & {
+        padding-bottom: 44%;
+      }
+    }
+  }
+}
+
+.cbi-product-vertical {
+  @include flex-display(flex, column, nowrap);
+  height: calc(100%  -  $gx-card-margin-base);
+
+  @media screen and (max-width: $screen-xs-max) {
+    height: calc(100%  -  $gx-card-margin-base-res);
+  }
+
+  & .cbi-product-body {
+    @include flex-only(1);
+  }
+}
+
+.cbi-product-title {
+  font-size: $h2-font-size;
+}
+
+
+

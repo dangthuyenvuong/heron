@@ -1,0 +1,134 @@
+/*Avatar Styles*/
+.cbi-avatar-img {
+  height: $size-50;
+  width: $size-50;
+  position: relative;
+  @include border-radius($border-radius-circle);
+  border: $border-style-base $border-width-base $border-color;
+}
+
+.cbi-avatar-img-lg {
+  height: $size-100;
+  width: $size-100;
+}
+
+.ant-avatar {
+  position: relative;
+
+  &.cbi-size-150 > * {
+    line-height: $size-150;
+  }
+
+  &.cbi-size-120 > * {
+    line-height: $size-120;
+  }
+
+  &.cbi-size-100 > * {
+    line-height: $size-100;
+  }
+
+  &.cbi-size-80 > * {
+    line-height: $size-80;
+  }
+
+  &.cbi-size-60 > * {
+    line-height: $size-60;
+  }
+
+  &.cbi-size-50 > * {
+    line-height: $size-50;
+  }
+
+  &.cbi-size-40 > * {
+    line-height: $size-40;
+  }
+
+  &.cbi-size-36 > * {
+    line-height: $size-36;
+  }
+
+  &.cbi-size-30 > * {
+    line-height: $size-30;
+  }
+
+  &.cbi-size-24 > * {
+    line-height: $size-20 + 4px;
+  }
+
+  &.cbi-size-20 > * {
+    line-height: $size-20;
+  }
+
+  &.cbi-size-15 > * {
+    line-height: $size-20 - 6px;
+  }
+
+  .cbi-customers-list & {
+    width: 70px;
+    height: 70px;
+
+    @media (max-width: ($screen-xl-min + 300px)) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: ($screen-xl-min + 166px)) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (max-width: ($screen-xl-min - 1px)) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (max-width: ($screen-xs-max - 175px)) {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+.cbi-avatar {
+  @include flex-display(flex, row, wrap);
+  overflow: hidden;
+  @include justify-content(center);
+  @include align-items(center);
+  height: $size-50;
+  width: $size-50;
+  position: relative;
+  @include border-radius($border-radius-circle);
+  border: $border-style-base $border-width-base $border-color;
+
+  @media screen and (max-width: $screen-md-max) {
+    .cbi-user-nav & {
+      height: $size-40;
+      width: $size-40;
+      line-height: $size-40;
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    .cbi-user-nav & {
+      height: $size-30;
+      width: $size-30;
+      line-height: $size-30;
+    }
+  }
+
+  .cbi-header-horizontal-main & {
+    height: $size-40;
+    width: $size-40;
+    line-height: $size-40;
+
+    @media screen and (max-width: $screen-md-max) {
+      height: $size-30;
+      width: $size-30;
+      line-height: $size-30;
+    }
+  }
+}
+
+.cbi-user-thumb {
+  position: relative;
+}

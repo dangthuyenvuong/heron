@@ -1,0 +1,189 @@
+/*Mails Apps Styles*/
+.cbi-module-box-row {
+  @include flex-display(flex, row, wrap);
+  width: 100%;
+}
+
+.cbi-module-box-column,
+.cbi-module-list-content {
+  @include flex-display(flex, column, nowrap);
+  width: 100%;
+  @include flex-only(1);
+}
+
+.cbi-mail-list-info {
+  @include flex-display(flex, column, nowrap);
+  padding-left: 10px;
+  max-width: calc(100%  -  150px);
+  @include flex(1);
+
+  @media screen and (max-width: $screen-xs-max) {
+    max-width: 100%;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+}
+
+.cbi-mail-user-info {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  margin-left: 10px;
+
+  & .cbi-avatar {
+    margin-right: 10px;
+  }
+
+  & .cbi-badge {
+    margin-bottom: 0;
+  }
+}
+
+.cbi-mail-user-des {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+  margin-bottom: 3px;
+
+  & .cbi-time,
+  & .cbi-icon-btn {
+    margin-left: auto;
+  }
+}
+
+.cbi-mail-detail-inner {
+  padding: 24px;
+
+  @media screen and (max-width: $screen-md-max) {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+.cbi-mail-header {
+  @include flex-display(flex, row, wrap);
+  @include align-items(center);
+
+  @media screen and (max-width: ($screen-xs-max - 77px)) {
+    display: block;
+    @include align-items(flex-start);
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.cbi-mail-header-content {
+  @include flex-display(flex, column, nowrap);
+
+  & .cbi-subject {
+    margin-bottom: 5px;
+  }
+}
+
+.cbi-show {
+  &-link {
+    cursor: pointer;
+    margin-bottom: 8px;
+    color: $primary-color;
+  }
+
+  &-detail {
+    margin-bottom: 12px;
+  }
+}
+
+.cbi-module-list-content {
+  & .cbi-subject {
+    @include gx-text-truncate;
+  }
+
+  & .cbi-message {
+    @include flex-display(flex, column, nowrap);
+    color: darken($grey-5, 30%);
+    font-size: 13px;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.cbi-size {
+  margin: 5px 0;
+}
+
+.cbi-sender-name {
+  margin-right: 0;
+  font-weight: $font-weight-medium;
+  font-size: 15px;
+}
+
+.cbi-send-subject {
+  width: calc(100%  -  220px);
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: calc(100%  -  180px);
+    margin-right: 6px;
+  }
+}
+
+.cbi-mail-header-actions {
+  @include justify-content(flex-end);
+  min-width: 100px;
+  @include flex-display(flex, row, wrap);
+
+  & .icon-btn:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  @media screen and (max-width: ($screen-xs-max - 77px)) {
+    @include justify-content(flex-start);
+    min-width: 10px;
+  }
+}
+
+.cbi-attachment {
+  &-block {
+    position: relative;
+  }
+
+  &-row {
+    @include flex-display(flex, row, wrap);
+    margin: 0 -10px;
+
+    @media screen and (max-width: $screen-xs-max) {
+      margin: 0 -5px;
+    }
+  }
+
+  &-col {
+    padding: 0 10px;
+
+    & img {
+      width: 80px;
+    }
+
+    & .size {
+      padding-top: 5px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      padding: 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .cbi-mail-list {
+    @include flex(1, 1, auto);
+    max-width: 100%;
+    border-right: 0 none;
+  }
+
+  .cbi-mail-detail {
+    @include flex(1, 1, auto);
+    max-width: 100%;
+  }
+}
